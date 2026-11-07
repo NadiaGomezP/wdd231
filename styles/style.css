@@ -130,7 +130,6 @@ h2 { margin: 0 0 18px; font-size: 1.25rem; line-height: 1.25; }
 .social-links a:hover, .social-links a:focus-visible { background: #d7c9e8; color: var(--violet-dark); }
 .social-links svg { width: 22px; height: 22px; fill: currentColor; }
 .copyright, .modified { margin: 0; font-size: .83rem; }
-.copyright, .modified { font-size: .68rem; }
 .modified { color: var(--muted); }
 
 :focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }

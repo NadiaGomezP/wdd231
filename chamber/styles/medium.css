@@ -1,0 +1,186 @@
+/* ----------------- MEDIUM CSS ------------------- */
+
+@media screen and (min-width: 48em){
+
+  .directory-main {
+    padding-top: 2rem;
+  }
+
+  .directory-cards.list .member-card {
+    grid-template-columns: minmax(200px, 1.2fr) minmax(0, 1fr) minmax(0, 1fr) minmax(130px, .7fr) minmax(130px, .7fr);
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .site-name-container h1{
+    margin-top: 3rem;
+}
+
+.main-home {
+        display: grid;
+        gap: 1rem;
+        grid-template-areas:
+          "hero  hero  hero  hero"
+          "news  news  news  news"
+          "spot  spot  spot  spot"
+          "join  join  join  join"
+          "event event event weather";
+      }
+
+      .hero {
+        grid-area: hero;
+      }
+    
+      .event {
+        grid-area: event;
+      }
+
+      .event h2{
+        font-size: 15px;
+
+        }
+        
+        .event h1{
+          font-size: 20px;
+          }
+        
+          .event p{
+            font-size: 15px;
+          }
+
+          .news-release h2{
+            font-size: 20px;
+            margin-top: -10px;
+            margin-bottom: 10px;
+            }
+            
+            .news-release h1{
+              font-size: 25px;
+              }
+            
+              .news-release p{
+                font-size: 16px;
+              }
+
+              .join h1{
+                font-size: 30px;
+                }
+              
+                .join p{
+                  font-size: 25px;
+                }
+    
+      .weather {
+        grid-area: weather;
+      }
+    
+      .news-release {
+        grid-area: news;
+      }
+    
+      .spotlights {
+        grid-area: spot;
+        display: flex;
+        gap: 1.6rem;
+        justify-content: space-between;
+      }      
+
+    
+      .join {
+        display: block;
+        grid-area: join;
+      }
+
+      .company-text {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .banner {
+        font-size: 18px;
+    }
+    
+    .hero {
+      grid-area: hero;
+    }
+  
+
+  .grid-gallery {
+    padding: 10px 10px 20px 10px;
+      grid-template-columns: 1fr 1fr;
+      gap:1rem;
+  }
+
+  figure img {
+      width: 230px;
+      height: 230px;
+
+  }
+
+  .grid-gallery .gallery-item-large{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    width: 90%;
+  }
+  
+  .grid-gallery .gallery-item-large-2{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    width: 90%;
+  }
+  
+  .grid-gallery .gallery-item-large-3{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    width: 90%;
+  }
+  
+  .grid-gallery .gallery-item-large-4{
+    grid-column: 2/4;
+    grid-row: 4/5;
+    width: 90%;
+  }
+  
+  .grid-gallery .gallery-item-large-5{
+    grid-column: 2/4;
+    grid-row: 5/6;
+    width: 90%;
+  }
+
+  .paragraphs-demo{
+    font-size: 16px;
+  }
+
+  .h1-gallery{
+    font-size: 25px;
+  }
+
+  form label.top input, form label.top select {
+    padding: .75rem;
+
+}
+
+form fieldset {
+  border: 2px solid #445ba9;
+  border-radius: 10px;
+  padding: 3rem;
+}
+
+
+}
+
+@media screen and (min-width: 48em) and (max-width: 59em){
+
+  .spotlights section {
+    width: 100%;
+  }
+
+
+
+}

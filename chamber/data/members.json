@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Caminito Tour",
+    "address": "Caminito, Buenos Aires",
+    "email": "info@buenosairesfreewalks.example",
+    "phone": "+54 11 4916-8340",
+    "website": "https://www.buenosairesfreewalks.com/spanish/tour-gratis-la-boca/",
+    "image": "caminito.webp",
+    "membershipLevel": 1,
+    "description": "Guided walks through the colorful streets and history of La Boca."
+  },
+  {
+    "name": "La Bombonera Tour",
+    "address": "Brandsen 805, La Boca, Buenos Aires",
+    "email": "visitas@museoboquense.example",
+    "phone": "+54 11 4362-1100",
+    "website": "https://museoboquense.com/estadio-tour/",
+    "image": "bombonera.webp",
+    "membershipLevel": 1,
+    "description": "A behind-the-scenes visit to the iconic Boca Juniors stadium."
+  },
+  {
+    "name": "Benito Quinquela Monument Tour",
+    "address": "Dr. del Valle Iberlucea 1282, La Boca, Buenos Aires",
+    "email": "info@quinquela-tour.example",
+    "phone": "+54 11 6145-3796",
+    "website": "https://universes.art/es/art-destinations/argentina/buenos-aires/tours/la-boca/quinquela-martin",
+    "image": "museoquinquela.webp",
+    "membershipLevel": 1,
+    "description": "Explore the art and legacy of La Boca's celebrated artist, Benito Quinquela Martín."
+  },
+  {
+    "name": "Pasión Boquense Museum",
+    "address": "Brandsen 805, La Boca, Buenos Aires",
+    "email": "museo@museoboquense.example",
+    "phone": "+54 11 4362-1100",
+    "website": "https://museoboquense.com/",
+    "image": "museoboquense.webp",
+    "membershipLevel": 1,
+    "description": "Discover the history, trophies, and traditions of Boca Juniors."
+  },
+  {
+    "name": "Benito Quinquela Martín Museum",
+    "address": "Av. Don Pedro de Mendoza 1835, La Boca, Buenos Aires",
+    "email": "museo@buenosaires.example",
+    "phone": "+54 11 4301-1080",
+    "website": "https://www.buenosaires.gob.ar/museoquinquelamartin",
+    "image": "teatrolaribera.webp",
+    "membershipLevel": 2,
+    "description": "Visit a landmark cultural destination celebrating Argentine art and local history."
+  },
+  {
+    "name": "MARCO Museum",
+    "address": "Av. Almte. Brown 1031, La Boca, Buenos Aires",
+    "email": "info@museomarco.example",
+    "phone": "+54 11 2206-4853",
+    "website": "https://museomarco.org/",
+    "image": "casaamarilla.webp",
+    "membershipLevel": 2,
+    "description": "A contemporary art museum supporting the creative life of the neighborhood."
+  },
+  {
+    "name": "La Bombonera Soccer Tickets",
+    "address": "Brandsen 805, La Boca, Buenos Aires",
+    "email": "socios@bocajuniors.example",
+    "phone": "+54 11 5777-1200",
+    "website": "https://www.bocajuniors.com.ar/",
+    "image": "riachueloboca.webp",
+    "membershipLevel": 2,
+    "description": "Find match-day information and visitor services for Boca Juniors supporters."
+  },
+  {
+    "name": "Riachuelo Chamber of Tourism",
+    "address": "Brandsen 805, C1161 CABA, Buenos Aires",
+    "email": "nperaltadiaz@byupathway.edu",
+    "phone": "+54113510240",
+    "website": "https://nadiagomezp.github.io/wdd231/chamber/",
+    "image": "riachuelo.webp",
+    "membershipLevel": 3,
+    "description": "The local tourism chamber connecting visitors with the culture and businesses of La Boca."
+  },
+  {
+    "name": "La Boca Cultural District",
+    "address": "La Boca, Buenos Aires",
+    "email": "info@laboca.example",
+    "phone": "+54 11 7359-8456",
+    "website": "https://www.bocajuniors.com.ar/socios/departamento-socios",
+    "image": "usina.webp",
+    "membershipLevel": 3,
+    "description": "Explore the neighborhood's arts, music, architecture, and community events."
+  }
+]

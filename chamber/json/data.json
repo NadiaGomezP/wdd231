@@ -1,0 +1,85 @@
+{
+    "cards": [
+      {
+        "name": "Caminito Tour",
+        "address": "Caminito, Buenos Aires",
+        "phonenumber": "1149168340",
+        "membership": "NP",
+        "url": "https://www.buenosairesfreewalks.com/spanish/tour-gratis-la-boca/?gclid=Cj0KCQiAj4ecBhD3ARIsAM4Q_jGuAH0WW6ccEPpcb_hlGV8fmdiuuX_Hn39JC91rpvD9LmZYWGL6eXwaAh8tEALw_wcB",
+        "order": 1,
+        "imageurl": "https://raw.githubusercontent.com/NadiaGomezP/wdd230/master/imagesjson/caminito.webp"
+      },
+      {
+        "name": "La Bombonera Tour",
+        "address": "Brandsen 805",
+        "phonenumber": "1143621100",
+        "membership": "NP",
+        "url": "http://museoboquense.com/estadio-tour/",
+        "order": 2,
+        "imageurl": "https://raw.githubusercontent.com/NadiaGomezP/wdd230/master/imagesjson/labombonera.webp"
+      },
+      {
+        "name": "Benito Quinquela Monument Tour",
+        "address": "Dr. del Valle Iberlucea 1282",
+        "phonenumber": "1161453796",
+        "membership": "NP",
+        "url": "https://universes.art/es/art-destinations/argentina/buenos-aires/tours/la-boca/quinquela-martin",
+        "order": 3,
+        "imageurl": "https://raw.githubusercontent.com/NadiaGomezP/wdd230/master/imagesjson/benitoquinquelaestatua.webp"
+      },
+      {
+        "name": "Pasión Boquense Museum",
+        "address": "Brandsen 805",
+        "phonenumber": "1143621100",
+        "membership": "Bronze",
+        "url": "http://museoboquense.com/",
+        "order": 4,
+        "imageurl": "https://raw.githubusercontent.com/NadiaGomezP/wdd230/master/imagesjson/museoboquense.webp"
+      },
+      {
+        "name": "Benito Quinquela Martín Museum",
+        "address": "Av. Don Pedro de Mendoza 1835",
+        "phonenumber": "11430110805",
+        "membership": "Bronze",
+        "url": "https://www.buenosaires.gob.ar/museoquinquelamartin",
+        "order": 5,
+        "imageurl": "https://raw.githubusercontent.com/NadiaGomezP/wdd230/master/imagesjson/benitoquinquelamuseo.webp"
+      },
+      {
+        "name": "MARCO Museum",
+        "address": "Av. Almte. Brown 1031",
+        "phonenumber": "1122064853",
+        "membership": "Bronze",
+        "url": "https://museomarco.org/",
+        "order": 6,
+        "imageurl": "https://raw.githubusercontent.com/NadiaGomezP/wdd230/master/imagesjson/marcomuseo.webp"
+      },
+      {
+        "name": "La Bombonera Soccer Tickets",
+        "address": "Brandsen 805",
+        "phonenumber": "57771200",
+        "membership": "Silver",
+        "url": "https://www.bocajuniors.com.ar/",
+        "order": 7,
+        "imageurl": "https://raw.githubusercontent.com/NadiaGomezP/wdd230/master/imagesjson/bomboneratickets.webp"
+      },
+      {
+        "name": "Advertising",
+        "address": "Riachuelo Chamber",
+        "phonenumber": "112240528",
+        "membership": "Gold",
+        "url": "https://nadiagomezp.github.io/wdd230/chamber/index.html",
+        "order": 8,
+        "imageurl": "https://raw.githubusercontent.com/NadiaGomezP/wdd230/master/imagesjson/riachuelo.webp"
+      },
+      {
+        "name": "Meet the Team Event",
+        "address": "La Boca",
+        "phonenumber": "1173598456",
+        "membership": "Gold",
+        "url": "https://www.bocajuniors.com.ar/socios/departamento-socios",
+        "order": 9,
+        "imageurl": "https://raw.githubusercontent.com/NadiaGomezP/wdd230/master/imagesjson/bocateam.webp"
+      }      
+    ]
+  }
