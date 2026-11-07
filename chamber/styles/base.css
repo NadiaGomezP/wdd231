@@ -403,10 +403,6 @@ main .listgrid {
 	text-align: center;
 }
 
-.menudirectory button {
-  padding: 1rem;
-}
-
 article,
 section {
   margin: 0.75rem;
@@ -607,32 +603,6 @@ img {
     font-weight: 700;
   }
 
-  .directory-cards.grid {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
-    grid-auto-rows: auto;
-    gap: 1rem;
-  }
-
-  .directory-cards .member-card {
-    min-width: 0;
-    height: auto;
-    margin: 0;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .55rem;
-    border: 1px solid #9daeb4;
-    border-radius: .5rem;
-    background: #fff;
-    text-align: center;
-    overflow-wrap: anywhere;
-  }
-
   .directory-cards .member-card img {
     width: 100%;
     height: 160px;
@@ -679,17 +649,6 @@ img {
     display: flex;
     flex-direction: column;
     gap: .5rem;
-  }
-
-  .directory-cards.list .member-card {
-    display: grid;
-    justify-items: start;
-    gap: .35rem;
-    text-align: left;
-  }
-
-  .directory-cards.list .member-card-content {
-    grid-template-columns: minmax(74px, 30%) minmax(0, 1fr);
   }
 
   .directory-page {
@@ -843,11 +802,19 @@ img {
   }
 
   .directory-cards.grid {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
     grid-template-columns: 1fr;
+    grid-auto-rows: auto;
     gap: 1rem;
   }
 
   .directory-cards .member-card {
+    min-width: 0;
+    height: auto;
+    margin: 0;
     padding: 0;
     display: block;
     border: 0;
@@ -856,6 +823,7 @@ img {
     box-shadow: none;
     color: #222;
     text-align: left;
+    overflow-wrap: anywhere;
   }
 
   .directory-cards .member-card-heading {
@@ -918,10 +886,6 @@ img {
     width: fit-content;
     padding: 0;
     background: transparent;
-  }
-
-  .directory-cards.list .member-card {
-    display: block;
   }
 
   .directory-cards.list .member-card-content {
