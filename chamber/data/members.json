@@ -15,7 +15,7 @@
     "email": "visitas@museoboquense.example",
     "phone": "+54 11 4362-1100",
     "website": "https://museoboquense.com/estadio-tour/",
-    "image": "bombonera.webp",
+    "image": "bombonera-480.webp",
     "membershipLevel": 1,
     "description": "A behind-the-scenes visit to the iconic Boca Juniors stadium."
   },
@@ -85,7 +85,7 @@
     "email": "info@laboca.example",
     "phone": "+54 11 7359-8456",
     "website": "https://www.bocajuniors.com.ar/socios/departamento-socios",
-    "image": "usina.webp",
+    "image": "usina-480.webp",
     "membershipLevel": 3,
     "description": "Explore the neighborhood's arts, music, architecture, and community events."
   }
