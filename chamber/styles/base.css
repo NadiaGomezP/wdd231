@@ -534,10 +534,6 @@ img {
     text-align: center;
   }
 
-  .joinpage .benefits{
-    height: auto;
-  }
-
   .joinpage {
     --join-blue: #276490;
     --join-blue-dark: #1d4d70;
@@ -631,6 +627,7 @@ img {
     display: grid;
     gap: 1rem;
     align-content: start;
+    height: auto;
   }
 
   .membership-card {
