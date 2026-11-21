@@ -256,3 +256,54 @@ async function loadDirectory() {
 if (document.querySelector("#member-cards")) {
   loadDirectory();
 }
+
+const timestampField = document.querySelector("#timestamp");
+if (timestampField) {
+  timestampField.value = new Date().toISOString();
+}
+
+document.querySelectorAll("[data-dialog]").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const dialog = document.getElementById(link.dataset.dialog);
+    if (dialog) {
+      dialog.showModal();
+    }
+  });
+});
+
+document.querySelectorAll("dialog").forEach((dialog) => {
+  dialog.querySelector(".close-dialog")?.addEventListener("click", () => dialog.close());
+  dialog.addEventListener("click", (event) => {
+    if (event.target === dialog) {
+      dialog.close();
+    }
+  });
+});
+
+const applicationDetails = document.querySelector(".application-details");
+if (applicationDetails) {
+  const parameters = new URLSearchParams(window.location.search);
+  const fields = {
+    fname: "confirm-fname",
+    lname: "confirm-lname",
+    email: "confirm-email",
+    phone: "confirm-phone",
+    organization: "confirm-organization",
+    timestamp: "confirm-timestamp"
+  };
+
+  Object.entries(fields).forEach(([name, id]) => {
+    const output = document.getElementById(id);
+    if (!output) return;
+    const value = parameters.get(name) || "Not provided";
+    if (name === "timestamp" && value !== "Not provided") {
+      const submitted = new Date(value);
+      output.textContent = Number.isNaN(submitted.getTime())
+        ? value
+        : submitted.toLocaleString();
+    } else {
+      output.textContent = value;
+    }
+  });
+}

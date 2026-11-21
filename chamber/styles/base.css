@@ -538,6 +538,225 @@ img {
     height: auto;
   }
 
+  .joinpage {
+    --join-blue: #276490;
+    --join-blue-dark: #1d4d70;
+    --join-gold: #ec9a29;
+    --join-background: #f3f6f8;
+    max-width: 75rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    color: #242424;
+    font-family: 'Roboto', Arial, sans-serif;
+  }
+
+  .joinpage h1,
+  .joinpage > h2 {
+    width: 100%;
+  }
+
+  .joinpage h1,
+  .joinpage .benefits > h2 {
+    color: var(--join-blue-dark);
+  }
+
+  .joinpage form {
+    padding: 1rem;
+    border: 1px solid #d5e0e8;
+    border-top: 5px solid var(--join-gold);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 14px rgba(29, 77, 112, 0.12);
+  }
+
+  .joinpage fieldset {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    padding: 0.5rem;
+    background: transparent;
+  }
+
+  .joinpage legend {
+    color: var(--join-blue-dark);
+    font-weight: 700;
+  }
+
+  .joinpage form label.top {
+    color: #1d4d70;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .joinpage form label.description-field {
+    margin-top: 1.25rem;
+  }
+
+  .joinpage form label.top input,
+  .joinpage form label.top select,
+  .joinpage form label.top textarea {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    margin-top: 0.4rem;
+    padding: 0.75rem;
+    border: 1px solid #aebfca;
+    border-radius: 4px;
+    background-color: var(--join-background);
+  }
+
+  .joinpage form label.top input:focus,
+  .joinpage form label.top select:focus,
+  .joinpage form label.top textarea:focus {
+    border-color: var(--join-blue);
+    outline: 3px solid rgba(39, 100, 144, 0.2);
+  }
+
+  .joinpage form input.submitBtn {
+    width: 100%;
+    max-width: 20rem;
+    margin: 1rem 0 0;
+    background: var(--join-blue);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .joinpage form input.submitBtn:hover,
+  .joinpage form input.submitBtn:focus-visible {
+    background: var(--join-blue-dark);
+  }
+
+  .joinpage .benefits {
+    display: grid;
+    gap: 1rem;
+    align-content: start;
+  }
+
+  .membership-card {
+    border: 1px solid #cbd9e3;
+    border-top: 4px solid var(--join-gold);
+    border-radius: 8px;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 4px 14px rgba(29, 77, 112, 0.12);
+    animation: membership-card-in 700ms ease-out both;
+  }
+
+  .membership-card:nth-child(3) {
+    animation-delay: 150ms;
+  }
+
+  .membership-card:nth-child(4) {
+    animation-delay: 300ms;
+  }
+
+  .membership-card:nth-child(5) {
+    animation-delay: 450ms;
+  }
+
+  .membership-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    position: static;
+    text-align: left;
+    color: var(--join-blue-dark);
+  }
+
+  .membership-card p {
+    margin: 0 0 1rem;
+    color: #3e4d56;
+    line-height: 1.5;
+  }
+
+  .membership-card a {
+    display: inline-block;
+    color: #fff;
+    background: var(--join-blue);
+    padding: 0.55rem 0.75rem;
+    border-radius: 4px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .membership-card a:hover,
+  .membership-card a:focus-visible {
+    background: var(--join-blue-dark);
+    text-decoration: underline;
+  }
+
+  dialog {
+    max-width: 32rem;
+    border: 2px solid var(--join-blue);
+    border-radius: 8px;
+  }
+
+  dialog::backdrop {
+    background: rgba(0, 0, 0, 0.55);
+  }
+
+  dialog .close-dialog {
+    border: none;
+    border-radius: 4px;
+    background: var(--join-blue);
+    color: #fff;
+    padding: 0.65rem 1rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .thankyou-page {
+    max-width: 50rem;
+    margin: 2rem auto;
+  }
+
+  .thankyou-card {
+    margin: 1rem;
+    padding: 1.5rem;
+    border: 2px solid #445ba9;
+    border-radius: 8px;
+  }
+
+  .application-details {
+    margin: 0;
+  }
+
+  .application-details div {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    gap: 1rem;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .application-details dt {
+    font-weight: 700;
+  }
+
+  .application-details dd {
+    margin: 0;
+  }
+
+  @keyframes membership-card-in {
+    from {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .membership-card {
+      animation: none;
+    }
+  }
+
   .title{
     text-align: center;
     font-size: 30px;

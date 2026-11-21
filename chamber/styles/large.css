@@ -147,8 +147,18 @@ figure img {
 
 .joinpage {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.joinpage form {
+  flex: 1 1 35rem;
+  max-width: 38rem;
+}
+
+.joinpage .benefits {
+  flex: 0 1 22rem;
 }
 
   

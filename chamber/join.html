@@ -3,17 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Discover local attractions, cultural destinations, and tourism businesses in the Riachuelo Chamber of Tourism directory.">
+    <meta name="description" content="Apply to join the Riachuelo Chamber of Tourism and choose a membership level.">
     <meta name="author" content="Nadia Peralta Diaz">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Business Directory | Riachuelo Chamber of Tourism">
-    <meta property="og:description" content="Discover local attractions, cultural destinations, and tourism businesses in the Riachuelo Chamber of Tourism directory.">
+    <meta property="og:title" content="Join | Riachuelo Chamber of Tourism">
+    <meta property="og:description" content="Apply to join the Riachuelo Chamber of Tourism and choose a membership level.">
     <meta property="og:image" content="https://nadiagomezp.github.io/wdd231/chamber/images/riachuelo-social.png">
     <meta property="og:image:alt" content="Riachuelo Chamber of Tourism in Buenos Aires">
     <meta property="og:image:width" content="600">
     <meta property="og:image:height" content="600">
-    <meta property="og:url" content="https://nadiagomezp.github.io/wdd231/chamber/directory.html">
-    <title>Business Directory | Riachuelo Chamber of Tourism</title>
+    <meta property="og:url" content="https://nadiagomezp.github.io/wdd231/chamber/join.html">
+    <title>Join the Chamber | Riachuelo Chamber of Tourism</title>
     <link rel="icon" href="./favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,67 +47,95 @@
             <a href="discover.html">Discover</a>
         </nav>
     </header>
-    <main class="joinpage">        
-        <form method="get" action="thankyou.html">   
+    <main class="joinpage">
+        <h1>Join the Riachuelo Chamber of Tourism</h1>
+        <form method="get" action="thankyou.html">
             <fieldset>
-                <label class="top">First Name* <input type="text" name="fname" required></label>
-                <label class="top">Last Name* <input type="text" name="lname" required></label>
-                <label class="top">Bussiness Position Title <input type="text" pattern="[a-z-' ']{7,}" name="bposition"></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
-                <label class="top">Cell Phone Number* <input type="tel" name="phone" required></label>
-                <label class="top">Business Name/Title* <input type="text" name="bname" required></label>
-                <label class="top"> Membership Level
-                    <select name="subject">
-                        <option value="">Please Select &#9662;</option>
-                        <option value="np">NP Membership</option>
+                <legend>Membership Application</legend>
+                <label class="top">First Name
+                    <input type="text" name="fname" required autocomplete="given-name" title="Applicant first name">
+                </label>
+                <label class="top">Last Name
+                    <input type="text" name="lname" required autocomplete="family-name" title="Applicant last name">
+                </label>
+                <label class="top">Organizational Title
+                    <input type="text" name="organization-title" autocomplete="organization-title"
+                        title="Your title within the organization"
+                        pattern="[A-Za-z\- ]{7,}">
+                </label>
+                <label class="top">Email
+                    <input type="email" name="email" autocomplete="email" title="Applicant email address"
+                        placeholder="example@gmail.com" required>
+                </label>
+                <label class="top">Mobile Phone Number
+                    <input type="tel" name="phone" autocomplete="tel" title="Applicant mobile phone number" required>
+                </label>
+                <label class="top">Business/Organization Name
+                    <input type="text" name="organization" autocomplete="organization"
+                        title="Business or organization name" required>
+                </label>
+                <label class="top">Membership Level
+                    <select name="membership" title="Select a membership level" required>
+                        <option value="" disabled selected>Please select a level</option>
+                        <option value="np">NP Membership (no fee)</option>
                         <option value="bronze">Bronze Membership</option>
                         <option value="silver">Silver Membership</option>
                         <option value="gold">Gold Membership</option>
                     </select>
                 </label>
-                <div class="top">Business Description:</div>
-                <textarea id="area" name="bdescription" rows="4" cols="35"></textarea>
-                </fieldset>      
-            
-            
-            <input type="hidden" name="form-hour" value="">
-            <input type="submit" value="Join" class="submitBtn">                
-        
+                <label class="top description-field">Business/Organization Description
+                    <textarea id="area" name="description" title="Description of the business or organization"
+                        rows="5"></textarea>
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp">
+            </fieldset>
+            <input type="submit" value="Submit Application" class="submitBtn">
         </form>
-        <section class="benefits">
-            <div class="np_benefits">
-              <h3>NP</h3>
-              <ul>
-                <li>No fee</li>
-                <li>For Non-profit organizations only</li>
-                <li>Tour guides for free in La Boca neighborhood</li>
-              </ul>
-            </div>
-            <div class="bronze_benefits">
-              <h3>Bronze - $20</h3>
-              <ul>
-                <li>Tour guides for free</li>                
-                <li>Access to museums for free</li>
-                <li>Access to exclusive merchadising and gifts from all the museums</li>
-              </ul>
-            </div>
-            <div class="silver_benefits">
-              <h3>Silver - $35</h3>
-              <ul>
-                <li>Sale of tickets for important events</li>
-                <li>Exclusive sale of tickets for Boca Juniors games</li>
-                <li>Discounts provided to businesses who have been in operation for at least 5 years.</li>
-              </ul>
-            </div>
-            <div class="gold_benefits">
-              <h3>Gold - $50</h3>
-              <ul>
-                <li>PRE-SALE for tickets to important events</li>
-                <li>PRE-SALE of VIP tickets to Boca Juniors games</li>
-                <li>Advertising of your LA BOCA commerce in our home page</li>
-              </ul>
-            </div>
-          </section>
+
+        <section class="benefits" aria-labelledby="membership-heading">
+            <h2 id="membership-heading">Membership Levels</h2>
+            <article class="membership-card np_benefits">
+                <h3>NP Membership</h3>
+                <p>For nonprofit organizations - no fee</p>
+                <a href="#np-dialog" data-dialog="np-dialog">View benefits</a>
+            </article>
+            <article class="membership-card bronze_benefits">
+                <h3>Bronze - $20</h3>
+                <p>Essential chamber benefits</p>
+                <a href="#bronze-dialog" data-dialog="bronze-dialog">View benefits</a>
+            </article>
+            <article class="membership-card silver_benefits">
+                <h3>Silver - $35</h3>
+                <p>Expanded event and discount access</p>
+                <a href="#silver-dialog" data-dialog="silver-dialog">View benefits</a>
+            </article>
+            <article class="membership-card gold_benefits">
+                <h3>Gold - $50</h3>
+                <p>Maximum promotion and presale benefits</p>
+                <a href="#gold-dialog" data-dialog="gold-dialog">View benefits</a>
+            </article>
+        </section>
+
+        <dialog id="np-dialog">
+            <h2>NP Membership Benefits</h2>
+            <ul><li>No fee</li><li>Free La Boca neighborhood tours</li><li>Chamber networking events</li></ul>
+            <button type="button" class="close-dialog">Close</button>
+        </dialog>
+        <dialog id="bronze-dialog">
+            <h2>Bronze Membership Benefits</h2>
+            <ul><li>Free guided tours</li><li>Free museum access</li><li>Chamber event discounts</li></ul>
+            <button type="button" class="close-dialog">Close</button>
+        </dialog>
+        <dialog id="silver-dialog">
+            <h2>Silver Membership Benefits</h2>
+            <ul><li>Special event ticket sales</li><li>Exclusive Boca Juniors ticket access</li><li>Business training and discounts</li></ul>
+            <button type="button" class="close-dialog">Close</button>
+        </dialog>
+        <dialog id="gold-dialog">
+            <h2>Gold Membership Benefits</h2>
+            <ul><li>VIP event presale</li><li>VIP Boca Juniors ticket presale</li><li>Advertising on the chamber home page</li></ul>
+            <button type="button" class="close-dialog">Close</button>
+        </dialog>
     </main>
 <footer class="home-footer">
         <div class="directory-footer-contact">
