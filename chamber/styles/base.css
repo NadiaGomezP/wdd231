@@ -534,8 +534,8 @@ img {
     text-align: center;
   }
 
-  .benefits{
-    height: 50% !important;
+  .joinpage .benefits{
+    height: auto;
   }
 
   .title{
@@ -544,8 +544,8 @@ img {
     margin: 10px;
   }
 
-  .people{
-    height: 50% !important;
+  main .people{
+    height: 50%;
     padding: 20px;
     background-color: #0000003a;
   }
@@ -948,14 +948,14 @@ img {
     gap: 1rem;
   }
 
-  .directory-social a {
+  .directory-page footer .directory-social a {
     width: 48px;
     height: 48px;
     display: grid;
     place-items: center;
     border-radius: 50%;
     background: var(--directory-blue-dark);
-    color: #fff !important;
+    color: #fff;
   }
 
   .directory-social svg {
